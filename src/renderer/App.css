@@ -1,0 +1,83 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+body {
+  position: relative;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top, #000408 0%, #090611 100%),;
+  font-family: sans-serif;
+  display: flex;
+  user-select: none;
+  --border: 1px solid rgba(196, 194, 194, 0.075);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+#sideBar{
+  display: inline-block;
+  background-color: #1a1a1a3a;
+  border-right: var(--border);
+  height:100vh;
+  width:14rem;
+  padding: 14px;
+}
+
+#acc-layout-child-footer{
+  display: inline-block;
+  background-color: #1a1a1a3a;
+  border-right: 1px solid rgba(196, 194, 194, 0.075);
+  height:4rem;
+  border-top: var(--border);
+  width:100%;
+  padding: 14px;
+}
+
+#content{
+  display: inline-block;
+  width: 100%;
+}
+
+.sideBarItem{
+  margin-top:8px;
+  font-weight: 600;
+  width: 100%;
+  display:inline-flex;
+  border-radius: 6px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  padding-left:6px;
+  padding-right: 6px;
+}
+
+.sideBarItem:hover{
+  background-color: rgba(128, 128, 128, 0.158);
+}
+
+#appLoadingParent{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#loginForm{
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+  width: 500px;
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid rgb(40, 39, 44);
+}
